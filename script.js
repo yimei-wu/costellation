@@ -5,8 +5,8 @@ const poleStar = document.getElementById("star");
 stars.forEach((star) => {
   if (star !== theStar) {
     star.addEventListener("click", () => {
-      stars.forEach((s) => (s.style.border = "none"));
-      star.style.border = "2px solid #ff0000";
+      stars.forEach((s) => s.classList.replace("wrong-star", "star"));
+      star.classList.replace("star", "wrong-star");
     });
   }
 });
