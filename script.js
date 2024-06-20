@@ -12,7 +12,7 @@ stars.forEach((star) => {
 });
 
 theStar.addEventListener("click", () => {
-  stars.forEach((s) => (s.style.border = "none"));
+  stars.forEach((s) => s.classList.replace("wrong-star", "star"));
   theStar.classList.replace("star", "star-inserted");
   poleStar.style.display = "none";
 
